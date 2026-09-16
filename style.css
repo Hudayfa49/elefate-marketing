@@ -243,6 +243,13 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.92);
 .price-card.featured .btn-arrow{background:var(--teal)}
 
 /* ---------- BLOG ---------- */
+.filter-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.filter-btn{padding:9px 20px;border-radius:40px;border:1.6px solid var(--line);background:#fff;
+  font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.9rem;color:var(--purple);cursor:pointer;
+  transition:background .3s,color .3s,border-color .3s}
+.filter-btn:hover{border-color:var(--teal)}
+.filter-btn.active{background:var(--purple);color:#fff;border-color:var(--purple)}
+.post.hide{display:none}
 .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .post{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s,border-color .3s}
 .post:hover{transform:translateY(-6px);border-color:var(--teal);box-shadow:0 26px 50px -32px rgba(28,9,64,0.3)}
