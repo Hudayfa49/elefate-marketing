@@ -195,7 +195,10 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.92);
   background:var(--teal);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") center/13px no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") center/13px no-repeat}
 .feature-media{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(150deg,var(--teal) 0%,var(--purple) 100%);
   position:relative;overflow:hidden;box-shadow:0 30px 60px -34px rgba(28,9,64,0.5)}
-.feature-media .glass{position:absolute;inset:auto 16px 16px 16px;background:rgba(255,255,255,0.9);
+.feature-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.feature-media .img-hover{opacity:0;transition:opacity .6s ease}
+.feature-media:hover .img-hover,.feature-media:focus-within .img-hover{opacity:1}
+.feature-media .glass{position:absolute;inset:auto 16px 16px 16px;background:rgba(255,255,255,0.9);z-index:2;
   backdrop-filter:blur(6px);border-radius:12px;padding:16px 18px;font-weight:700;color:var(--purple);font-size:0.9rem}
 
 /* ---------- STEPS ---------- */
