@@ -45,3 +45,22 @@ if (document.body.classList.contains('home') && !reduce) {
     if (!shown) { glow.style.opacity = '1'; shown = true; }
   });
 }
+
+// Blogfilter
+const filterBar = document.querySelector('.filter-bar');
+if (filterBar) {
+  const btns = filterBar.querySelectorAll('.filter-btn');
+  const posts = document.querySelectorAll('.post');
+  filterBar.addEventListener('click', (e) => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    btns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    posts.forEach(p => {
+      const show = f === 'all' || p.dataset.cat === f;
+      p.classList.toggle('hide', !show);
+      if (show) p.classList.add('in');
+    });
+  });
+}
