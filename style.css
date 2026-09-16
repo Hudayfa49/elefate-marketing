@@ -94,9 +94,11 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.92);
 .nav-links{display:flex;gap:28px;align-items:center}
 .nav-links>a,.dropdown>a{font-size:0.92rem;font-weight:600;color:var(--purple);opacity:.75;transition:opacity .25s}
 .nav-links>a:hover,.dropdown>a:hover,.nav-links>a.active,.dropdown.active>a{opacity:1}
-.nav-cta{padding:11px 44px 11px 22px;font-size:0.85rem}
-.nav-cta .circ{width:28px;height:28px;left:calc(100% - 33px)}
+.nav-cta{padding:11px 46px 11px 20px;font-size:0.85rem}
+.nav-cta .circ{width:28px;height:28px;left:calc(100% - 34px)}
+.nav-cta .lbl{transition:transform .5s cubic-bezier(.76,0,.24,1)}
 .nav-cta:hover .circ,.nav-cta:focus-visible .circ{left:6px}
+.nav-cta:hover .lbl,.nav-cta:focus-visible .lbl{transform:translateX(20px)}
 /* dropdown */
 .dropdown{position:relative}
 .dropdown-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(8px);
@@ -112,8 +114,14 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.92);
 .hero{padding:74px 24px 84px;position:relative;overflow:hidden;background:
   radial-gradient(90% 70% at 92% 6%, rgba(82,198,202,0.14) 0%, rgba(255,255,255,0) 60%)}
 .hero .wrap{display:grid;grid-template-columns:1.08fr 0.92fr;gap:52px;align-items:center}
-.hero h1{font-size:clamp(2.7rem,5.6vw,4.6rem);letter-spacing:-0.03em}
+.hero h1{font-size:clamp(2.7rem,5.6vw,4.6rem);letter-spacing:-0.03em;animation:heroFade .8s ease both}
 .hero h1 .accent{color:var(--teal-600)}
+.hero h1 .mark{position:relative;isolation:isolate;color:var(--purple);white-space:nowrap}
+.hero h1 .mark::before{content:"";position:absolute;inset:.06em -.14em .04em;background:rgba(82,198,202,.5);
+  border-radius:9px;z-index:-1;transform:scaleX(0);transform-origin:left center;
+  animation:markSweep .6s cubic-bezier(.65,.05,.36,1) .85s both}
+@keyframes heroFade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes markSweep{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .hero p.lead{margin-top:22px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
 
@@ -299,6 +307,8 @@ footer{background:var(--purple-800);color:#fff;padding:60px 24px 32px}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none;transition:none}
+  .hero h1{animation:none}
+  .hero h1 .mark::before{animation:none;transform:scaleX(1)}
   #cursor-glow{transition:opacity .5s ease}
   .btn-arrow .circ,.btn-arrow,.btn-line::before,.word{transition-duration:0.001ms !important}
 }
