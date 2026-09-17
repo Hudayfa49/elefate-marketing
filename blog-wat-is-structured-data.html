@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wat is structured data? Uitgelegd met voorbeelden — Elefate Marketing</title>
+<meta name="description" content="Wat is structured data? Ontdek hoe schema markup je website beter laat begrijpen door Google en AI, welke soorten er zijn en hoe je het toevoegt en test.">
+<link rel="icon" href="logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen structured data en schema markup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Structured data is het overkoepelende concept: gestructureerde, machine-leesbare gegevens. Schema markup is het toepassen van het schema.org-vocabulaire om die data op je pagina te labelen. In de praktijk worden de termen vaak door elkaar gebruikt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heb ik structured data nodig voor SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Structured data is geen directe rankingfactor, maar het helpt zoekmachines je content beter te begrijpen en maakt rich results mogelijk, zoals sterren, prijzen en uitklapbare FAQ's. Dat kan je zichtbaarheid en je doorklikratio flink verbeteren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "In welk formaat voeg ik structured data toe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google raadt JSON-LD aan. Dat is een klein stukje code dat je in de broncode van je pagina plaatst, los van de zichtbare tekst. Het is het makkelijkst te onderhouden en het minst foutgevoelig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe test ik of mijn structured data werkt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik de Rich Results Test van Google om te zien of je pagina in aanmerking komt voor rich results, en de Schema Markup Validator (validator.schema.org) om je code op fouten te controleren."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="/" class="brand"><img src="logo.png" alt="Elefate Marketing"></a>
+    <nav class="nav-links" id="menu">
+      <a href="/">Home</a>
+      <div class="dropdown">
+        <a href="/diensten">Diensten</a>
+        <div class="dropdown-menu">
+          <a href="/seo-geo">SEO &amp; GEO</a>
+          <a href="/webdesign">Webdesign</a>
+        </div>
+      </div>
+      <a href="/tarieven">Tarieven</a>
+      <a href="/over-ons">Over ons</a>
+      <a href="/blog" class="active">Blog</a>
+      <a href="mailto:hello@elefatemarketing.nl" class="btn-arrow nav-cta">
+        <span class="lbl">Plan een gesprek</span>
+        <span class="circ" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+      </a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Blog / SEO</span>
+    <h1>Wat is structured data?</h1>
+  </div>
+</section>
+
+<article class="article">
+  <div class="wrap-narrow">
+
+    <div class="article-meta">
+      <span>Auteur: <strong>Elefate Marketing</strong></span>
+      <span>Datum: 17 september 2026</span>
+      <span>Gemiddelde leesduur: 4 min</span>
+    </div>
+
+    <div class="callout">
+      <strong>Kort antwoord:</strong> Structured data is een stukje gestandaardiseerde code (meestal in het schema.org-formaat) waarmee je zoekmachines precies vertelt wat je content betekent. Zo begrijpen Google én AI-zoekmachines je pagina beter, wat kan leiden tot opvallende zoekresultaten (rich results) en betere vindbaarheid.
+    </div>
+
+    <p>Zoekmachines lezen de tekst op je website, maar ze <em>begrijpen</em> die niet altijd. Staat er "€49", dan weet Google niet vanzelf of dat een productprijs is, het tarief van een cursus of gewoon een getal in een zin. Structured data haalt dat giswerk weg. Je vertelt zoekmachines letterlijk: dit is een product, dit is de prijs, dit is een review, dit is een veelgestelde vraag.</p>
+
+    <p>In dit artikel leg ik uit wat structured data precies is, hoe het zich verhoudt tot schema markup, waarom het belangrijk is voor je vindbaarheid in Google én AI, en hoe je er zelf mee aan de slag gaat.</p>
+
+    <h2>Wat is structured data precies?</h2>
+    <p>Structured data is data in een vast, machine-leesbaar formaat. Op websites gebruik je daarvoor bijna altijd het vocabulaire van <strong>schema.org</strong>, dat je als code aan je pagina toevoegt. Die code labelt de onderdelen van je pagina, zodat een zoekmachine weet wat elk stukje betekent.</p>
+    <p>Het resultaat: zoekmachines begrijpen je content beter en kunnen je pagina rijker weergeven in de zoekresultaten. Denk aan sterren bij een review, een uitklapbare FAQ of een prijs die direct zichtbaar is.</p>
+
+    <h2>Structured data, schema markup en schema.org: het verschil</h2>
+    <p>Deze termen worden vaak door elkaar gebruikt, terwijl ze net iets anders betekenen. Deze tabel zet ze op een rij:</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>Term</th><th>Wat het is</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Structured data</td><td>Het overkoepelende concept: gestructureerde, machine-leesbare gegevens</td></tr>
+          <tr><td>Schema.org</td><td>De gezamenlijke "woordenlijst" die zoekmachines afgesproken hebben</td></tr>
+          <tr><td>Schema markup</td><td>Het toepassen van dat schema.org-vocabulaire op jouw pagina</td></tr>
+          <tr><td>JSON-LD</td><td>Het aanbevolen formaat (de code) waarin je het toevoegt</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Waarom is structured data belangrijk voor SEO?</h2>
+    <p>Structured data is geen directe rankingfactor, laat ik daar eerlijk over zijn. Je komt er niet automatisch hoger door in Google. Maar het levert wél voordelen op die indirect je vindbaarheid en je verkeer verbeteren:</p>
+    <ul>
+      <li><strong>Rich results.</strong> Sterren, prijzen, uitklapbare FAQ's en broodkruimels maken je zoekresultaat opvallender.</li>
+      <li><strong>Hogere doorklikratio.</strong> Een opvallender resultaat trekt meer klikken, ook zonder dat je positie verandert.</li>
+      <li><strong>Beter begrip.</strong> Google snapt de context van je pagina beter, wat helpt bij de juiste vertoning.</li>
+    </ul>
+
+    <h2>Structured data en AI: waarom het nú extra telt</h2>
+    <p>Bij bijna elk zoekwoord rond dit onderwerp toont Google inmiddels een AI-samenvatting bovenaan. En AI-zoekmachines zoals ChatGPT leunen op bronnen die duidelijk en goed gestructureerd zijn. Structured data maakt jouw content makkelijker te interpreteren en te citeren, precies wat je wilt in het AI-tijdperk. Het is daarmee een van de bouwstenen van <a href="/blog-wat-is-geo" class="inline">GEO (Generative Engine Optimization)</a>.</p>
+
+    <h2>Welke soorten structured data zijn er?</h2>
+    <p>Er zijn honderden schematypes, maar in de praktijk kom je vooral deze tegen:</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>Type</th><th>Waarvoor je het gebruikt</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Article</td><td>Blogartikelen en nieuwsberichten</td></tr>
+          <tr><td>Product</td><td>Producten met prijs en beschikbaarheid</td></tr>
+          <tr><td>Review / AggregateRating</td><td>Beoordelingen en sterren in de zoekresultaten</td></tr>
+          <tr><td>FAQPage</td><td>Veelgestelde vragen (uitklapbaar in Google)</td></tr>
+          <tr><td>BreadcrumbList</td><td>Het broodkruimelpad onder je zoekresultaat</td></tr>
+          <tr><td>LocalBusiness</td><td>Lokale bedrijfsgegevens zoals adres en openingstijden</td></tr>
+          <tr><td>Organization</td><td>Merk- en bedrijfsinformatie</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Hoe voeg je structured data toe aan je website?</h2>
+    <p>Je hoeft geen developer te zijn om de basis te snappen. Dit is de route die ik aanhoud:</p>
+    <ol>
+      <li><strong>Kies het juiste type.</strong> Zoek op schema.org het type dat bij je pagina past (bijvoorbeeld Product of FAQPage).</li>
+      <li><strong>Schrijf het in JSON-LD.</strong> Dit is het formaat dat Google aanraadt en het makkelijkst te onderhouden is.</li>
+      <li><strong>Plaats het in de paginacode.</strong> De code komt in een apart script-blok, los van je zichtbare tekst.</li>
+      <li><strong>Houd het eerlijk.</strong> De data moet kloppen met wat de bezoeker daadwerkelijk ziet, anders kan Google het negeren of bestraffen.</li>
+      <li><strong>Testen.</strong> Controleer altijd of het foutloos werkt (zie hieronder).</li>
+    </ol>
+
+    <h2>Zo test en valideer je structured data</h2>
+    <p>Voordat je structured data live zet, wil je zeker weten dat het klopt. Twee gratis tools volstaan:</p>
+    <ul>
+      <li><strong>Google Rich Results Test.</strong> Laat zien of je pagina in aanmerking komt voor rich results.</li>
+      <li><strong>Schema Markup Validator</strong> (validator.schema.org). Controleert je code regel voor regel op fouten.</li>
+    </ul>
+    <p>Kleine tip uit de praktijk: test na elke wijziging opnieuw. Eén ontbrekend veld kan al genoeg zijn om een rich result mis te lopen.</p>
+
+    <h2>Veelgestelde vragen over structured data</h2>
+    <div class="faq-item">
+      <h3>Wat is het verschil tussen structured data en schema markup?</h3>
+      <p>Structured data is het overkoepelende concept: gestructureerde, machine-leesbare gegevens. Schema markup is het toepassen van het schema.org-vocabulaire om die data op je pagina te labelen. In de praktijk worden de termen vaak door elkaar gebruikt.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Heb ik structured data nodig voor SEO?</h3>
+      <p>Structured data is geen directe rankingfactor, maar het helpt zoekmachines je content beter te begrijpen en maakt rich results mogelijk, zoals sterren, prijzen en uitklapbare FAQ's. Dat kan je zichtbaarheid en je doorklikratio flink verbeteren.</p>
+    </div>
+    <div class="faq-item">
+      <h3>In welk formaat voeg ik structured data toe?</h3>
+      <p>Google raadt JSON-LD aan. Dat is een klein stukje code dat je in de broncode van je pagina plaatst, los van de zichtbare tekst. Het is het makkelijkst te onderhouden en het minst foutgevoelig.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Hoe test ik of mijn structured data werkt?</h3>
+      <p>Gebruik de Rich Results Test van Google om te zien of je pagina in aanmerking komt voor rich results, en de Schema Markup Validator (validator.schema.org) om je code op fouten te controleren.</p>
+    </div>
+
+    <div class="readmore-wrap">
+      <a href="/blog-wat-is-geo" class="btn-arrow readmore">
+        <span class="lbl">Lees ook: Wat is GEO?</span>
+        <span class="circ" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+      </a>
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <img src="logo-icon.png" alt="" style="height:38px;margin:0">
+        <span style="font-weight:800;font-size:1.15rem;letter-spacing:-0.02em">Elefate Marketing</span>
+      </div>
+      <p>Jouw groeipartner voor het AI-tijdperk. Webdesign, maatwerk en SEO/GEO die je bedrijf laten groeien.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Diensten</h4>
+      <a href="/webdesign">Webdesign</a>
+      <a href="/seo-geo">SEO &amp; GEO</a>
+      <a href="/diensten">Alle diensten</a>
+      <a href="/tarieven">Tarieven</a>
+    </div>
+    <div class="foot-col">
+      <h4>Elefate</h4>
+      <a href="/over-ons">Over ons</a>
+      <a href="/blog">Blog</a>
+      <a href="/">Home</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@elefatemarketing.nl">hello@elefatemarketing.nl</a>
+      <a href="mailto:hello@elefatemarketing.nl">Plan een gesprek</a>
+    </div>
+  </div>
+  <div class="foot-copy">© 2026 Elefate Marketing. Alle rechten voorbehouden.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
