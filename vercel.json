@@ -1,4 +1,9 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/blog-wat-is-geo", "destination": "/blog/wat-is-geo", "permanent": true },
+    { "source": "/blog-lokale-seo", "destination": "/blog/lokale-seo", "permanent": true },
+    { "source": "/blog-wat-is-structured-data", "destination": "/blog/wat-is-structured-data", "permanent": true }
+  ]
 }
