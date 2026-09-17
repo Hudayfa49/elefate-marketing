@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waarom lokale SEO nog steeds loont — Elefate Marketing</title>
+<meta name="description" content="Is lokale SEO nog relevant in het AI-tijdperk? Ja. Ontdek waarom lokale SEO nog steeds loont, welke factoren tellen en hoe je er stap voor stap mee aan de slag gaat.">
+<link rel="icon" href="/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is lokale SEO nog relevant met AI-zoekmachines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. AI-zoekmachines putten voor lokale vragen uit dezelfde bronnen als Google, zoals je Google Bedrijfsprofiel, reviews en lokale vermeldingen. Een sterke lokale aanwezigheid helpt je dus zowel in Google als in AI-antwoorden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de belangrijkste factor voor lokale SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je Google Bedrijfsprofiel is de basis. Een volledig ingevuld, actueel profiel met goede reviews en consistente bedrijfsgegevens (naam, adres, telefoon) weegt zwaar mee in de lokale resultaten en op Google Maps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt het voordat lokale SEO resultaat oplevert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaak zie je met lokale SEO sneller resultaat dan met landelijke SEO, omdat de concurrentie in je directe omgeving kleiner is. Reken toch op enkele weken tot maanden voordat verbeteringen echt zichtbaar worden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heb ik een fysieke locatie nodig voor lokale SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet per se. Ook bedrijven die bij klanten op locatie werken (zoals installateurs of coaches) kunnen een servicegebied instellen en zo lokaal gevonden worden, zonder een winkel of kantoor met inloop."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="/" class="brand"><img src="/logo.png" alt="Elefate Marketing"></a>
+    <nav class="nav-links" id="menu">
+      <a href="/">Home</a>
+      <div class="dropdown">
+        <a href="/diensten">Diensten</a>
+        <div class="dropdown-menu">
+          <a href="/seo-geo">SEO &amp; GEO</a>
+          <a href="/webdesign">Webdesign</a>
+        </div>
+      </div>
+      <a href="/tarieven">Tarieven</a>
+      <a href="/over-ons">Over ons</a>
+      <a href="/blog" class="active">Blog</a>
+      <a href="mailto:hello@elefatemarketing.nl" class="btn-arrow nav-cta">
+        <span class="lbl">Plan een gesprek</span>
+        <span class="circ" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+      </a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Blog / SEO</span>
+    <h1>Waarom lokale SEO nog steeds loont</h1>
+  </div>
+</section>
+
+<article class="article">
+  <div class="wrap-narrow">
+
+    <div class="article-meta">
+      <span>Auteur: <strong>Elefate Marketing</strong></span>
+      <span>Datum: 16 september 2026</span>
+      <span>Gemiddelde leesduur: 4 min</span>
+    </div>
+
+    <div class="callout">
+      <strong>Kort antwoord:</strong> Lokale SEO zorgt dat je gevonden wordt door klanten in je eigen omgeving, precies op het moment dat ze zoeken. Ondanks AI en landelijke concurrentie blijft het lonen, omdat lokale zoekopdrachten een hoge koopintentie hebben en vaak leiden tot een bezoek, een belletje of een aanvraag.
+    </div>
+
+    <p>Met de opkomst van AI-zoekmachines krijg ik steeds vaker de vraag: heeft lokale SEO nog wel zin? Mijn antwoord is een volmondig ja. Terwijl iedereen druk is met AI en landelijke zichtbaarheid, blijft lokaal zoeken een van de meest waardevolle plekken om gevonden te worden. Juist omdat het zo dicht bij de klant en bij de aankoop staat.</p>
+
+    <p>In dit artikel leg ik uit wat lokale SEO precies is, waarom het nog steeds loont, welke factoren echt meetellen en hoe je er zelf mee aan de slag gaat.</p>
+
+    <h2>Wat is lokale SEO?</h2>
+    <p>Lokale SEO is het geheel aan optimalisaties waarmee je zichtbaar wordt in zoekopdrachten met een lokale bedoeling. Denk aan zoekopdrachten als "kapper in de buurt", "loodgieter Amersfoort" of gewoon "restaurant" op je telefoon, waarbij Google automatisch je locatie meeneemt.</p>
+    <p>Bij dat soort zoekopdrachten toont Google een lokaal blok met een kaart en een aantal bedrijven, het zogenoemde local pack. Daar tussen staan is goud waard, want dit is precies waar mensen kijken die klaar zijn om iets te kiezen.</p>
+
+    <h2>Waarom lokale SEO nog steeds loont</h2>
+    <p>Zoekgedrag verandert, maar de kracht van lokaal zoeken blijft. Dit zijn de belangrijkste redenen:</p>
+    <ul>
+      <li><strong>Hoge koopintentie.</strong> Wie lokaal zoekt, wil vaak binnen korte tijd iets doen: bellen, langsgaan of een afspraak maken.</li>
+      <li><strong>Minder concurrentie.</strong> Je concurreert met bedrijven in je omgeving, niet met heel Nederland. Dat maakt de top makkelijker bereikbaar.</li>
+      <li><strong>Zichtbaar op mobiel.</strong> Veel lokale zoekopdrachten gebeuren onderweg, op de telefoon, met directe actie tot gevolg.</li>
+      <li><strong>AI gebruikt lokale data.</strong> Ook AI-zoekmachines leunen voor lokale vragen op je Google Bedrijfsprofiel en reviews. Een sterke lokale basis werkt dus dubbel.</li>
+    </ul>
+
+    <h2>Lokale SEO vs landelijke SEO</h2>
+    <p>Lokale en landelijke SEO delen dezelfde basis, maar de nadruk ligt anders. Deze tabel zet ze naast elkaar:</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>&nbsp;</th><th>Lokale SEO</th><th>Landelijke SEO</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Doelgroep</td><td>Klanten in je omgeving</td><td>Klanten door heel het land</td></tr>
+          <tr><td>Zoekopdrachten</td><td>Met plaats of "in de buurt"</td><td>Zonder locatie</td></tr>
+          <tr><td>Belangrijkste kanaal</td><td>Google Bedrijfsprofiel &amp; Maps</td><td>Organische zoekresultaten</td></tr>
+          <tr><td>Concurrentie</td><td>Lager (regionaal)</td><td>Hoger (landelijk)</td></tr>
+          <tr><td>Koopintentie</td><td>Vaak hoog en direct</td><td>Wisselend</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Welke factoren tellen mee voor lokale SEO?</h2>
+    <p>Lokale SEO draait om een aantal duidelijke signalen. Dit zijn de belangrijkste, met wat ze doen:</p>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>Factor</th><th>Wat het doet</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Google Bedrijfsprofiel</td><td>De basis van je lokale zichtbaarheid en je plek op Maps</td></tr>
+          <tr><td>Reviews</td><td>Bouwen vertrouwen op en wegen mee in de lokale ranking</td></tr>
+          <tr><td>NAP-consistentie</td><td>Naam, adres en telefoon overal identiek, dat schept duidelijkheid</td></tr>
+          <tr><td>Lokale zoekwoorden</td><td>Plaatsnamen en wijken verwerkt in je content</td></tr>
+          <tr><td>Lokale landingspagina's</td><td>Aparte pagina's per plaats of dienst die je aanbiedt</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Zo pak je lokale SEO aan</h2>
+    <p>Je hoeft niet alles tegelijk te doen. Dit is de volgorde die ik aanhoud:</p>
+    <ol>
+      <li><strong>Claim en vul je Google Bedrijfsprofiel.</strong> Volledig, actueel en met de juiste categorie, openingstijden en foto's.</li>
+      <li><strong>Verzamel structureel reviews.</strong> Vraag tevreden klanten actief om een beoordeling en reageer erop.</li>
+      <li><strong>Maak je bedrijfsgegevens consistent.</strong> Zorg dat je naam, adres en telefoonnummer overal exact hetzelfde zijn.</li>
+      <li><strong>Verwerk je locatie in je content.</strong> Noem je plaats en werkgebied op een natuurlijke manier op je website.</li>
+      <li><strong>Bouw lokale landingspagina's.</strong> Bied je diensten in meerdere plaatsen aan? Geef elke plaats een eigen, waardevolle pagina.</li>
+      <li><strong>Werk aan lokale bekendheid.</strong> Vermeldingen in lokale gidsen, samenwerkingen en links uit je regio versterken je autoriteit.</li>
+    </ol>
+
+    <h2>Lokale SEO en AI: een sterk duo</h2>
+    <p>Lokale SEO en de nieuwe AI-zoekmachines bijten elkaar niet, ze versterken elkaar. Als iemand aan een AI vraagt om een goede specialist in de buurt, put die AI uit dezelfde lokale signalen: je Google Bedrijfsprofiel, je reviews en je vermeldingen. Investeer je in lokale SEO, dan verbeter je meteen je kansen om in AI-antwoorden te verschijnen. Bij Elefate pakken we lokale SEO en AI-vindbaarheid daarom het liefst in samenhang aan.</p>
+
+    <h2>Veelgestelde vragen over lokale SEO</h2>
+    <div class="faq-item">
+      <h3>Is lokale SEO nog relevant met AI-zoekmachines?</h3>
+      <p>Ja. AI-zoekmachines putten voor lokale vragen uit dezelfde bronnen als Google, zoals je Google Bedrijfsprofiel, reviews en lokale vermeldingen. Een sterke lokale aanwezigheid helpt je dus zowel in Google als in AI-antwoorden.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Wat is de belangrijkste factor voor lokale SEO?</h3>
+      <p>Je Google Bedrijfsprofiel is de basis. Een volledig, actueel profiel met goede reviews en consistente bedrijfsgegevens weegt zwaar mee in de lokale resultaten en op Google Maps.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Hoe lang duurt het voordat lokale SEO resultaat oplevert?</h3>
+      <p>Vaak zie je met lokale SEO sneller resultaat dan met landelijke SEO, omdat de concurrentie in je directe omgeving kleiner is. Reken toch op enkele weken tot maanden voordat verbeteringen echt zichtbaar worden.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Heb ik een fysieke locatie nodig voor lokale SEO?</h3>
+      <p>Niet per se. Ook bedrijven die bij klanten op locatie werken kunnen een servicegebied instellen en zo lokaal gevonden worden, zonder een winkel of kantoor met inloop.</p>
+    </div>
+
+    <div class="readmore-wrap">
+      <a href="/blog/wat-is-geo" class="btn-arrow readmore">
+        <span class="lbl">Lees ook: Wat is GEO?</span>
+        <span class="circ" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+      </a>
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <img src="/logo-icon.png" alt="" style="height:38px;margin:0">
+        <span style="font-weight:800;font-size:1.15rem;letter-spacing:-0.02em">Elefate Marketing</span>
+      </div>
+      <p>Jouw groeipartner voor het AI-tijdperk. Webdesign, maatwerk en SEO/GEO die je bedrijf laten groeien.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Diensten</h4>
+      <a href="/webdesign">Webdesign</a>
+      <a href="/seo-geo">SEO &amp; GEO</a>
+      <a href="/diensten">Alle diensten</a>
+      <a href="/tarieven">Tarieven</a>
+    </div>
+    <div class="foot-col">
+      <h4>Elefate</h4>
+      <a href="/over-ons">Over ons</a>
+      <a href="/blog">Blog</a>
+      <a href="/">Home</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@elefatemarketing.nl">hello@elefatemarketing.nl</a>
+      <a href="mailto:hello@elefatemarketing.nl">Plan een gesprek</a>
+    </div>
+  </div>
+  <div class="foot-copy">© 2026 Elefate Marketing. Alle rechten voorbehouden.</div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
