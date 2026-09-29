@@ -355,3 +355,7 @@ footer{background:var(--purple-800);color:#fff;padding:60px 24px 32px}
   #cursor-glow{transition:opacity .5s ease}
   .btn-arrow .circ,.btn-arrow,.btn-arrow .lbl,.btn-line::before,.word{transition-duration:0.001ms !important}
 }
+
+/* ---------- PRICING: 2 kaarten gecentreerd ---------- */
+.pricing.duo{grid-template-columns:repeat(2,1fr);max-width:760px;margin-left:auto;margin-right:auto}
+@media(max-width:900px){.pricing.duo{grid-template-columns:1fr}}
