@@ -241,6 +241,10 @@ header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.92);
   -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") center/12px no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") center/12px no-repeat}
 .price-card .btn-arrow{width:100%}
 .price-card.featured .btn-arrow{background:var(--teal)}
+.price-card.featured .btn-arrow:hover,
+.price-card.featured .btn-arrow:focus-visible{background:#fff;color:var(--purple)}
+.price-card.featured .btn-arrow:hover .circ,
+.price-card.featured .btn-arrow:focus-visible .circ{background:var(--purple);color:#fff}
 
 /* ---------- BLOG ---------- */
 .filter-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
