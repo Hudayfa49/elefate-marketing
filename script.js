@@ -64,3 +64,23 @@ if (filterBar) {
     });
   });
 }
+
+// Reading progress bar (alleen op blogartikelen)
+const progressFill = document.querySelector('.reading-progress-fill');
+if (progressFill) {
+  const article = document.querySelector('article.article');
+  const updateProgress = () => {
+    if (!article) return;
+    const rect = article.getBoundingClientRect();
+    const articleTop = rect.top + window.scrollY;
+    const articleHeight = article.offsetHeight;
+    const start = articleTop;
+    const end = articleTop + articleHeight - window.innerHeight;
+    let percent = ((window.scrollY - start) / (end - start)) * 100;
+    percent = Math.max(0, Math.min(100, percent));
+    progressFill.style.width = percent + '%';
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+}
