@@ -315,6 +315,19 @@ footer{background:var(--purple-800);color:#fff;padding:60px 24px 32px}
 .foot-copy{border-top:1px solid var(--line-dark);margin:44px auto 0;padding-top:22px;max-width:var(--maxw);
   text-align:center;color:rgba(255,255,255,0.4);font-size:0.84rem}
 
+/* ---------- READING PROGRESS BAR (alleen blogartikelen) ---------- */
+.reading-progress{
+  position:sticky;top:74px;left:0;right:0;height:4px;
+  background:rgba(82,198,202,0.18);z-index:150;
+}
+.reading-progress-fill{
+  height:100%;width:0%;background:var(--teal);
+  transition:width .1s linear;
+}
+@media(prefers-reduced-motion:reduce){
+  .reading-progress-fill{transition:none}
+}
+
 /* ---------- CURSOR GLOW (alleen homepage) ---------- */
 #cursor-glow{position:fixed;top:0;left:0;width:300px;height:300px;margin-left:-150px;margin-top:-150px;
   border-radius:50%;background:radial-gradient(circle,rgba(82,198,202,0.34) 0%,rgba(82,198,202,0.12) 34%,rgba(82,198,202,0) 66%);
