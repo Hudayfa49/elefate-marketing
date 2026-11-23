@@ -120,4 +120,57 @@
     window.addEventListener('resize', update);
     update();
   }
+
+  /* contactformulier */
+  var form = document.getElementById('contact-form');
+  if (form) {
+    var topics = document.getElementById('f-onderwerp');
+    var err = document.getElementById('f-err');
+    var chipsBox = form.querySelector('[data-chips]');
+    chipsBox.addEventListener('click', function (e) {
+      var b = e.target.closest('button.chip');
+      if (!b) return;
+      var on = !b.classList.contains('on');
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      topics.value = [].map.call(chipsBox.querySelectorAll('.chip.on'), function (c) { return c.textContent; }).join(', ');
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('f-naam').value.trim();
+      var mail = document.getElementById('f-mail').value.trim();
+      var msg = document.getElementById('f-msg').value.trim();
+      if (!name || !/^\S+@\S+\.\S+$/.test(mail)) {
+        err.textContent = 'Vul je naam en een geldig e-mailadres in.';
+        err.hidden = false;
+        return;
+      }
+      err.hidden = true;
+      if (document.getElementById('f-key').value.indexOf('VUL_HIER') === 0) {
+        /* nog geen sleutel ingevuld: open het mailprogramma met een ingevuld bericht */
+        var body = 'Naam: ' + name + '\nE-mail: ' + mail + (topics.value ? '\nOnderwerp: ' + topics.value : '') + '\n\n' + msg;
+        window.location.href = 'mailto:elefate.marketing@gmail.com?subject=' + encodeURIComponent('Aanvraag via elefatemarketing.nl') + '&body=' + encodeURIComponent(body);
+        return;
+      }
+      var submit = form.querySelector('button[type=submit]');
+      submit.disabled = true;
+      fetch(form.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
+        .then(function (r) { return r.json(); })
+        .then(function (res) {
+          if (!res.success) throw new Error('mislukt');
+          form.hidden = true;
+          document.getElementById('f-sent').hidden = false;
+        })
+        .catch(function () {
+          err.textContent = 'Versturen is niet gelukt. Mail ons via elefate.marketing@gmail.com.';
+          err.hidden = false;
+          submit.disabled = false;
+        });
+    });
+  }
+
+  /* knoppen en links die naar het mailprogramma wijzen ("Plan een gesprek", "Aanvragen") gaan naar de contactpagina */
+  [].forEach.call(document.querySelectorAll('a[href^="mailto:"]'), function (a) {
+    if (a.classList.contains('btn') || /plan een gesprek/i.test(a.textContent)) a.setAttribute('href', '/contact');
+  });
 })();
