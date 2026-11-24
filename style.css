@@ -344,3 +344,7 @@ textarea.inp{padding:16px 18px;min-height:170px;resize:vertical}
   .js .bars i{transform:none}
   .progress i{transform:scaleX(0)}
 }
+
+/* footer: e-mailadres past op elke breedte */
+@media(min-width:900px){.foot-top{grid-template-columns:minmax(0,1fr) auto}}
+@media(max-width:899px){.foot-grid>div:last-child{grid-column:1/-1}}
