@@ -16,48 +16,15 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
 <script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="/style.css">
 
 </head>
 <body>
 <a class="skip" href="#main">Naar de inhoud</a>
-<div class="navhost">
-<header class="nav">
-  <div class="wrap nav-in">
-    <a class="logo" href="/" aria-label="Elefate Marketing, naar de homepage"><img src="/logo/elefate-woordmerk.svg" alt="elefate." width="151" height="52"></a>
-    <nav class="nl-list" aria-label="Hoofdmenu">
-      <a class="nl" href="/">Home</a>
-      <div class="dd">
-        <a class="nl" href="/diensten">Diensten <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="2 4 6 8 10 4"/></svg></a>
-        <div class="dd-menu"><a href="/diensten/seo-geo">SEO en GEO</a><a href="/diensten/webdesign">Webdesign</a></div>
-      </div>
-      <a class="nl" href="/cases">Cases</a>
-      <a class="nl" href="/tarieven">Tarieven</a>
-      <a class="nl" href="/over-ons">Over ons</a>
-      <a class="nl on" aria-current="page" href="/blog">Blog</a>
-    </nav>
-    <div class="nav-r">
-      <a class="btn sm nav-cta" href="mailto:elefate.marketing@gmail.com"><span>Plan een gesprek</span><span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span></a>
-      <button class="burger" id="burger" type="button" aria-label="Menu openen of sluiten" aria-expanded="false" aria-controls="mm"><span></span><span></span></button>
-    </div>
-  </div>
-  <nav class="mm" id="mm" aria-label="Mobiel menu">
-    <a href="/">Home</a>
-    <a href="/diensten">Diensten</a>
-    <a class="sub" href="/diensten/seo-geo">SEO en GEO</a>
-    <a class="sub" href="/diensten/webdesign">Webdesign</a>
-    <a href="/cases">Cases</a>
-    <a href="/tarieven">Tarieven</a>
-    <a href="/over-ons">Over ons</a>
-    <a href="/blog">Blog</a>
-    <a href="mailto:elefate.marketing@gmail.com">Plan een gesprek</a>
-  </nav>
-</header>
-
-</div>
+<!--@include header active="blog"-->
 <main id="main">
 <section class="ph"><div class="wrap">
   <span class="eyebrow fade" style="--d:.1s">blog</span>
@@ -85,6 +52,21 @@
 </a><a class="post" href="/blog/goede-website" data-cat="webdesign">
   <div class="pv web"><span class="g">web<i></i></span></div>
   <div class="pb"><div class="tag"><span>Webdesign</span><span>2 oktober 2026</span><span>3 min</span></div><h3>Waar moet een goede website aan voldoen?</h3></div>
+</a><a class="post" href="/blog/geo-optimalisatie" data-cat="seo-geo">
+  <div class="pv seo"><span class="g">geo<i></i></span></div>
+  <div class="pb"><div class="tag"><span>GEO</span><span>24 november 2026</span><span>6 min</span></div><h3>GEO optimalisatie: 7 stappen om genoemd te worden in AI-antwoorden</h3></div>
+</a><a class="post" href="/blog/waarom-contentmarketing" data-cat="seo-geo">
+  <div class="pv seo"><span class="g">seo<i></i></span></div>
+  <div class="pb"><div class="tag"><span>SEO</span><span>24 november 2026</span><span>4 min</span></div><h3>Waarom contentmarketing? Zo helpt regelmatig content publiceren je SEO</h3></div>
+</a><a class="post" href="/blog/prijzen-op-je-website" data-cat="groei">
+  <div class="pv web"><span class="g">groei<i></i></span></div>
+  <div class="pb"><div class="tag"><span>Groei</span><span>24 november 2026</span><span>5 min</span></div><h3>Prijs op aanvraag of prijzen op je website tonen? Zo kies je</h3></div>
+</a><a class="post" href="/blog/social-search" data-cat="seo-geo">
+  <div class="pv seo"><span class="g">seo<i></i></span></div>
+  <div class="pb"><div class="tag"><span>SEO</span><span>24 november 2026</span><span>4 min</span></div><h3>Social search: zo veranderen SEO en social media het moderne zoekgedrag</h3></div>
+</a><a class="post" href="/blog/ai-zoekmachines-merk-corrigeren" data-cat="ai">
+  <div class="pv ai"><span class="g">ai<i></i></span></div>
+  <div class="pb"><div class="tag"><span>AI</span><span>24 november 2026</span><span>6 min</span></div><h3>AI-zoekmachines en je merk: zo corrigeer je wat ze fout zeggen</h3></div>
 </a></div>
     <div class="empty" id="empty" hidden>
       <h3>Binnenkort meer artikelen</h3>
@@ -94,30 +76,6 @@
   </div>
 </section>
 </main>
-<footer>
-<section class="sec on-ink cta">
-  <div class="wrap cta-in">
-    <div class="cta-dot" aria-hidden="true"></div>
-    <span class="eyebrow">de volgende stap</span>
-    <h2 class="rv">Wordt dit jouw verhaal?</h2>
-    <p class="lead muted">Plan een vrijblijvend gesprek en we laten zien wat er mogelijk is.</p>
-    <a class="btn" href="mailto:elefate.marketing@gmail.com"><span>Plan een gesprek</span><span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span></a>
-  </div>
-</section>
-<section class="on-ink foot">
-  <div class="wrap">
-    <div class="foot-top">
-      <img class="foot-logo" src="/logo/elefate-marketing-donker.svg" alt="Elefate Marketing" width="520" height="280" loading="lazy">
-      <div class="foot-grid">
-        <div><h4>Diensten</h4><a href="/diensten/seo-geo">SEO en GEO</a><a href="/diensten/webdesign">Webdesign</a><a href="/tarieven">Tarieven</a></div>
-        <div><h4>Elefate</h4><a href="/">Home</a><a href="/over-ons">Over ons</a><a href="/cases">Cases</a><a href="/blog">Blog</a></div>
-        <div><h4>Contact</h4><a href="mailto:elefate.marketing@gmail.com">elefate.marketing@gmail.com</a><a href="mailto:elefate.marketing@gmail.com">Plan een gesprek</a></div>
-      </div>
-    </div>
-    <div class="foot-b"><span>© 2026 Elefate Marketing. Alle rechten voorbehouden.</span></div>
-  </div>
-</section>
-</footer>
-<script src="/script.js" defer></script>
+<!--@include footer-->
 </body>
 </html>
